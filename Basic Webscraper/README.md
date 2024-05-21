@@ -1,3 +1,3 @@
 # Bookscrape
 
-First scrape of Books to scrape website.
+Basic web scraper of the Books to scrape website.
