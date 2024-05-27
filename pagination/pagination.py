@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import pandas as pd
+from openpyxl import Workbook
 
 url = 'https://jiji.co.ke/cars?period&price_min=500000&price_max=1000000'
 r = requests.get(url)
@@ -31,5 +32,6 @@ df = pd.DataFrame(forSaleCars)
 print(df.head())
 
 df.to_csv('CarsforSale.csv')
+df.to_excel('CarsforSale.xlsx')
 
 
